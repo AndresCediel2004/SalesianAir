@@ -1,0 +1,32 @@
+{
+ "organizacion": "Aerolínea Comercial Salesiana Air",
+ "necesidad": "Monitorear la programación de vuelos, ocupación e itinerarios por origen y destino para tomar decisiones operativas de flota.",
+ "quien_decide": "Director de Operaciones de Vuelo y Gerente Comercial",
+ "hardware": "Servidor central de base de datos local y computadores terminales en salas de abordaje",
+ "software": "Sistema Operativo Linux Server, SQLite 3, Python 3 y Solara Web App",
+ "datos": "Una fila = Un registro individual de vuelo con su código, avión asignado, itinerario y cantidad de pasajeros",
+ "personas": "Agente de abordaje que registra vuelos, Coordinador de logística que consulta itinerarios y Director que toma decisiones",
+ "tic": "Red de área local (LAN) de la aerolínea y API de datos SQLite",
+ "proceso": [
+  "1. Registro de los datos del vuelo e itinerario del avión",
+  "2. Consulta de vuelos programados por código de avión u origen",
+  "3. Generación del reporte consolidado de vuelos y pasajeros por ciudad de origen"
+ ],
+ "tipo": "MIS",
+ "preguntas": {
+  "consulta": {
+   "pregunta": "¿Cuáles son los vuelos programados para la matrícula de avión HK-1001?",
+   "quien_decide": "Coordinador de mantenimiento y logística",
+   "decision": "Decide la asignación de itinerarios y revisión técnica del avión.",
+   "funcion_si": "procesar",
+   "tipo": "TPS"
+  },
+  "reporte": {
+   "pregunta": "¿Cuál es la cantidad total de vuelos y de pasajeros transportados por modelo de avión según la ciudad de origen?",
+   "quien_decide": "Director de Operaciones de Vuelo",
+   "decision": "Decide reorganizar la flota de aviones según la demanda por ciudad.",
+   "funcion_si": "distribuir",
+   "tipo": "MIS"
+  }
+ }
+}

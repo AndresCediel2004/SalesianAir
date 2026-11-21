@@ -1,0 +1,1 @@
+{"tabla_hechos": "vuelos", "consulta": ["consultar", ["HK-1001"]], "reporte": ["reportar", ["Bogota"]], "registro_valido": ["registrar", ["V-108", "HK-1001", "2026-10-02 09:00", "Bogota", "Medellin", 140]], "registro_invalido": ["registrar", ["V-109", "HK-9999", "2026-10-02 10:00", "Bogota", "Medellin", 100]]}
