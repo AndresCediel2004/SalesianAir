@@ -3,7 +3,7 @@
 **App:** SalesianAir
 **Repositorio:** Github
 
-**Necesidad:** Monitorear, registrar y consultar información de las reservas de vuelo para la aerolínea SalesianAir. Visualizar un reporte de la disponibilidad de cupos en cada avión por vuelo.
+**Necesidad:** Monitorear y registrar información de las reservas de vuelo para la aerolínea SalesianAir. Visualizar un reporte de la cantidad de reservas para un vuelo para la toma de decisiones para gerencia
 
 ## Componentes del sistema de información
 
@@ -33,7 +33,9 @@
 El sistema almacena información operativa de los vuelos, como el código del vuelo, la matrícula del avión, la fecha de salida, el origen, el destino y la cantidad de pasajeros registrados.
 Estos datos no incluyen nombres, documentos de identidad, teléfonos ni otros datos personales de los pasajeros. Su finalidad es permitir la consulta, el registro y la generación de reportes sobre las operaciones de la aerolínea.
 De acuerdo con la Ley 1581 de 2012 de Colombia, el tratamiento de datos personales debe respetar los derechos de privacidad de las personas. Este proyecto utiliza información operativa y evita recopilar datos personales innecesarios.
+## Prompts de IA (Gemini)
 
+1. Por favor para éste código para la vista de consulta haz que se pueda buscar también por: código de vuelo y documento. Y para la vista de reportes haz que también se pueda buscar por la ciudad de Origen.
 
 ## Correr en su equipo
 
