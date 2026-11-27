@@ -1,26 +1,25 @@
-# Aerolínea Comercial Salesiana Air
+# Aerolínea Comercial
 
-**App:** (pendiente)  
-**Repositorio:** (pendiente)
+**App:** SalesianAir
+**Repositorio:** Github
 
-**Necesidad:** Monitorear la programación de vuelos, ocupación e itinerarios por origen y destino para tomar decisiones operativas de flota.. **Quién decide:** Director de Operaciones de Vuelo y Gerente Comercial. **Tipo de SI:** MIS.
+**Necesidad:** Monitorear, registrar y consultar información de las reservas de vuelo para la aerolínea SalesianAir. Visualizar un reporte de la disponibilidad de cupos en cada avión por vuelo.
 
 ## Componentes del sistema de información
 
-- **hardware:** Servidor central de base de datos local y computadores terminales en salas de abordaje
-- **software:** Sistema Operativo Linux Server, SQLite 3, Python 3 y Solara Web App
-- **datos:** Una fila = Un registro individual de vuelo con su código, avión asignado, itinerario y cantidad de pasajeros
-- **personas:** Agente de abordaje que registra vuelos, Coordinador de logística que consulta itinerarios y Director que toma decisiones
-- **tic:** Red de área local (LAN) de la aerolínea y API de datos SQLite
+- **hardware:** Servidor central de base de datos local y computadores de la aerolínea SalesianAir
+- **software:** Sistema Operativo Linux Server, SQLite 3, Python 3 y Solara
+- **datos:** Se pueden hacer registros para reservar vuelos y a la vez se puede  observar el reporte de la cantidad de reservas por vuelo
+- **personas:** Agente de abordaje que registra reservas de vuelo, Coordinador de logística que consulta itinerarios y Director que toma decisiones
+- **tic:** Red de área local (LAN) de SalesianAir
 
 ## Proceso
 
-1. 1. Registro de los datos del vuelo e itinerario del avión
-2. 2. Consulta de vuelos programados por código de avión u origen
-3. 3. Generación del reporte consolidado de vuelos y pasajeros por ciudad de origen
+1. Registro de los datos del vuelo e itinerario del avión
+2. Consulta de vuelos programados por código de avión u origen
+3. Generación del reporte consolidado de vuelos y pasajeros por ciudad de origen
 
 ## Cómo se usa
-
 
 1. En la sección de consulta, la persona puede buscar los vuelos registrados utilizando el código del avión.
 2. En la sección de reportes, puede consultar un resumen de vuelos y pasajeros según la ciudad de origen.
