@@ -1,15 +1,23 @@
-INSERT INTO aviones (cod_avion, modelo) VALUES
-    ('HK-1001', 'Airbus A320'),
-    ('HK-2002', 'Boeing 737'),
-    ('HK-3003', 'Airbus A319'),
-    ('HK-4004', 'Boeing 787');
-
-INSERT INTO vuelos (codigo_vuelo, cod_avion, fecha_salida, origen, destino, pasajeros_registrados) VALUES
-    ('V-100', 'HK-1001', '2026-09-25 08:00', 'Bogota', 'Medellin', 150),
-    ('V-101', 'HK-2002', '2026-09-25 10:30', 'Medellin', 'Cartagena', 120),
-    ('V-102', 'HK-3003', '2026-09-26 14:00', 'Bogota', 'Cartagena', 110),
-    ('V-103', 'HK-1001', '2026-09-27 08:00', 'Bogota', 'Medellin', 145),
-    ('V-104', 'HK-4004', '2026-09-28 09:00', 'Bogota', 'Cali', 220),
-    ('V-105', 'HK-2002', '2026-09-29 11:00', 'Bogota', 'Cartagena', 135),
-    ('V-106', 'HK-3003', '2026-09-30 16:30', 'Medellin', 'Bogota', 95),
-    ('V-107', 'HK-1001', '2026-10-01 07:15', 'Cali', 'Bogota', 140);
+INSERT INTO aviones VALUES
+    ('HK-4501', 'Airbus A320', 180),
+    ('HK-4502', 'Boeing 737-800', 162),
+    ('HK-4610', 'ATR 72-600', 70);
+INSERT INTO pasajeros VALUES
+    ('1010101010', 'Camila Rojas',     'camila.rojas@example.com'),
+    ('1020202020', 'Santiago Pérez',   'santiago.perez@example.com'),
+    ('1030303030', 'Valentina Gómez',  'valentina.gomez@example.com'),
+    ('1040404040', 'Mateo Díaz',       'mateo.diaz@example.com'),
+    ('1050505050', 'Isabella Torres',  'isabella.torres@example.com'),
+    ('1060606060', 'Daniel Herrera',   'daniel.herrera@example.com');
+INSERT INTO vuelos VALUES
+    ('SA101', 'HK-4501', 'BOG', 'MDE', '2026-12-01 08:00'),
+    ('SA102', 'HK-4502', 'BOG', 'CTG', '2026-12-01 10:30'),
+    ('SA103', 'HK-4610', 'BOG', 'CLO', '2026-12-02 07:15'),
+    ('SA201', 'HK-4501', 'MDE', 'BOG', '2026-12-03 18:00'),
+    ('SA202', 'HK-4502', 'CTG', 'BOG', '2026-12-04 15:20');
+INSERT INTO reservas (codigo_vuelo, documento, asiento) VALUES
+    ('SA101', '1010101010', '1A'), ('SA101', '1020202020', '1B'), ('SA101', '1030303030', '2A'),
+    ('SA102', '1040404040', '3C'), ('SA102', '1010101010', '3D'),
+    ('SA103', '1050505050', '1A'), ('SA103', '1060606060', '1B'),
+    ('SA201', '1020202020', '5A'), ('SA201', '1030303030', '5B'),
+    ('SA202', '1040404040', '7F');
