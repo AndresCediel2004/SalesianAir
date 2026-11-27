@@ -14,7 +14,7 @@ EJEMPLOS = json.loads((Path(__file__).parent / "ejemplos.json").read_text(encodi
 
 @solara.component
 def Page():
-    solara.Title("Mi sistema de información")
+    solara.Title("Sistema de información - SalesianAir")
     Encabezado()
     with solara.Columns([1, 1]):
         with solara.Card("Consulta"):
