@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+
 import solara
 
 FICHA = json.loads((Path(__file__).parent / "ficha.json").read_text(encoding="utf-8"))
